@@ -1,0 +1,101 @@
+/**
+ * Estilos para la caja y para el elemento a mover
+ *
+ * @format
+ */
+
+html {
+    background-image: url(https://i.pinimg.com/736x/c7/c3/af/c7c3af8ed68718bb5c7251c2cf13b4a4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#imagen {
+    /*Es importantisimo asignarle a la imagen una posición relativa
+    para que pueda moverse siguiendo el flujo natural del HTML es
+    decir dentro de la caja.
+    */
+    width: 800px;
+    position: relative;
+    display: block;
+}
+
+#lienzo {
+    border: 1px solid rgb(247, 16, 158);
+    box-shadow: 0px 0px 20px rgb(255, 15, 223) inset;
+    width: 100%;
+    height: 750px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(248, 120, 248, 0.562);
+}
+
+/*Animaciones en css*/
+.gira {
+    -moz-animation: rotar 50ms infinite linear;
+    -webkit-animation: rotar 60ms infinite linear;
+}
+
+@-webkit-keyframes rotar {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotar {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+.elboton1 {
+    background-color: rgb(253, 135, 243);
+    padding: 30px;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid blueviolet;
+}
+
+.elboton {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tituloepico {
+    text-align: center;
+    color: rgb(138, 14, 255);
+    font-weight: bold;
+    background-color: rgb(255, 134, 235);
+    border-radius: 100px;
+    padding: 20px;
+    width: 500px;
+    border: 5px solid blueviolet;
+}
+
+.fl {
+    display: flex;
+    justify-content: center;
+}
+
+.elboton2 {
+    text-align: center;
+    color: rgb(138, 14, 255);
+    font-weight: bold;
+    background-color: rgb(255, 134, 235);
+    border-radius: 100px;
+    padding: 20px;
+    width: 500px;
+    border: 5px solid blueviolet;
+}
+
+.rotor {
+    margin-right: 20px;
+}
